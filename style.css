@@ -5,13 +5,21 @@
     color: black;
     font-family: sans-serif;
 }
-.top{
-    flex-basis: 100%;
+body{
     position: relative;
-    z-index: 50;
+}
+.top{
+    position: fixed;
+    flex-basis: 100%;
+    z-index: 9;
+    width: 100%;
+    height: 140px;
+    background-color: rgb(255, 255, 255);
     
 }
 header .first {
+    width: 100%;
+    height: 50px;
    border-bottom: solid 0.1px rgb(207, 207, 207);
 }
 header .first ul {
@@ -40,6 +48,8 @@ header .first ul li {
 /* second header*/
 
 .second {
+    width: 100%;
+    height: 90px;
     display: flex;
     margin-top: 13px;
    justify-content: space-evenly;
@@ -63,6 +73,7 @@ header .first ul li {
     margin: 12px;
 }
 .second-left ul li a{
+    color: black;
     text-decoration: none;
 }
 
@@ -77,6 +88,10 @@ header .first ul li {
 }
 
 /* Black Box*/
+.section-2{
+    width: 100%;
+    padding-top: 140px;
+}
 
 .black-box {
     background-color: rgb(29, 29, 29);
