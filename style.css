@@ -110,32 +110,47 @@ header .first ul li {
 }
 
 .black-box .black-btn {
-    color: white;
-    background-color: red;
+    color: rgb(230, 230, 230);
+    background-color: rgb(233, 0, 0);
     height: 40px;
     width: 130px;
     border-radius: 25px;
     border: none;
 }
-
+.black-box .black-btn:hover {
+    color: rgb(255, 253, 253);
+    background-color: rgb(255, 1, 1);
+}
 /* welcome */
 
 .welcome {
     display: flex;
+    flex-direction: column;
     flex-basis: 100%;
-    height: 100px;
-    background-color: rgb(236, 237, 239);
-    align-items: center;
-    
-    
+    height: 120px;
+    background-color: rgb(242, 242, 242);
 }
-
+.top-three-line {
+    height: 100px;
+    margin-left: 11rem;
+    margin-top: -4px;
+    align-self: flex-start;
+}
+.top-three-line .red{
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    background-color: red;
+    width: 8px;
+    margin-right: 5px;
+}
 .welcome p {
     font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: -3px;
-    font-size: 37px;
-    margin-left: 100px;
-    font-weight: bolder;
+    margin-left: 170px;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 40px;
 }
 
 /* second section */
@@ -192,7 +207,7 @@ header .first ul li {
 
 .last-section {
     width: 100%;
-    height: 400px;
+    height: 100px;
     background-color: rgb(31, 31, 31);
 }
 
@@ -207,13 +222,127 @@ header .first ul li {
     width: 15px;
     height: 60px;
 }
+/* offer and deals */
+.ofer-deals{
+    display: flex;
+    flex-basis: 100%;
+    height: 150px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(31, 31, 31);
+    gap: 280px;
+}
+.ofer-deals h1 , .ofer-deals p{
+    color: white;
+}
+
+.ofer-deals h1{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+/* scroll box */
+.scroll-box-parent {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    background-color: rgb(31, 31, 31);
+}
+.scroll-box-parent .scroll-box {
+    width: 300px;
+    height: 396px;
+    background-color: rgb(227, 224, 224);
+    border-radius: 13px;
+}
+
+.scroll-box .scroll-img {
+    width: 300px;
+    border-radius: 12px;
+}
+.scroll-box {
+    display: flex;
+    flex-direction: column;
+
+}
+.scroll-text {
+    height: 90px;
+    padding: 10px;
+}
+.scroll-box h1 {
+    text-align: center;
+    color: rgb(216, 2, 2);
+}
+.scroll-box p {
+    font-size: 16px;
+}
+.scroll-box-last {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.scroll-box-last a {
+    color: rgb(70, 69, 69);
+    text-decoration: underline;
+}
+
+.scroll-box-last button {
+    width: 130px;
+    height: 47px;
+    border-radius: 2rem;
+    box-shadow: 0 0 0 0;
+    border: 0.5px groove black;
+}
+.scroll-box-last button:hover {
+    background-color: black;
+    color: white;
+}
+.arrow1 ,.arrow2 {
+    position: relative;
+    top: 130px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(153, 153, 153, 0.8);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+
+}
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+.arrow1:hover, .arrow2:hover {
+    background-color: white;
+}
+
+.scroll-box-parent .arrow1 {
+    left: 30px;
+    
+}
+.scroll-box-parent .arrow2{
+   
+   left: 1260px;
+}
+
 
 /* footer Section */
 
 .footer-container {
     display: flex;
     flex-basis: 100%;
-    padding-top: 50px;
+    padding-top: 80px;
     height: 270px;
     background-color: rgb(31, 31, 31);
     justify-content: flex-end;
@@ -230,7 +359,9 @@ header .first ul li {
     color:white;
     font-size: 12px;
 }
-
+.footer-center table tr td {
+    font-size: 12px;
+}
 .footer-center table{
     width: 600px;
     height: 130px; 
@@ -270,3 +401,4 @@ header .first ul li {
 .foot-contact .social-icons a{
     margin: 5px;
 }
+
